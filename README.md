@@ -52,12 +52,11 @@ wordpress-k8s-helm-nginx/
 │           ├── wordpress-secret.yaml
 │           └── NOTES.txt
 │
-├── manifests/
+├── infrastructure/
 │   └── nginx-ingress/
 │       ├── README.md
-│       ├── controller.yaml
-│       └── rbac.yaml
-│
+│       └── install.sh   
+│ 
 ├── screenshots/
 │   ├── ingress-details.png
 │   ├── wordpress-login.png
