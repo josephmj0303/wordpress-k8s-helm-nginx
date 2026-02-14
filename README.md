@@ -76,7 +76,11 @@ wordpress-k8s-helm-nginx/
 1. Deploy NGINX Ingress Controller
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.3/deploy/static/provider/aws/deploy.yaml
-
+```
+Verify:
+```
+kubectl get pods -n ingress-nginx
+kubectl get svc -n ingress-nginx
 ```
 2. Install WordPress using Helm
 ```
