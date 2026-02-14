@@ -113,11 +113,22 @@ http://wordpress.joedevopslab.xyz/wp-admin
 
 ## 🔒 Security Considerations
 
-- Credentials stored as Kubernetes Secrets
+- WordPress and MySQL credentials are stored as Kubernetes Secrets
+  and injected into pods via environment variables.
 
-- External access controlled via Ingress
+- Database data and WordPress content are stored using PersistentVolumeClaims,
+  preventing data loss during pod restarts.
 
-- Can be extended with TLS using cert-manager
+- Application is exposed externally through NGINX Ingress Controller
+  with controlled host-based routing.
+
+- HTTPS is not currently enabled. TLS can be implemented using
+  cert-manager and Let’s Encrypt for production deployments.
+
+- For production environments, it is recommended to:
+  - Enable TLS termination
+  - Restrict database access using NetworkPolicies
+  - Rotate credentials periodically
 
 ---
 
