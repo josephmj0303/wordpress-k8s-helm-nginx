@@ -1,4 +1,4 @@
-# WordPress on Kubernetes using Helm & NGINX Ingress
+# 🚀 WordPress on Kubernetes using Helm & NGINX Ingress
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Helm 3](https://img.shields.io/badge/Helm%203-0F1689?style=for-the-badge&logo=helm&logoColor=white)
 ![NGINX](https://img.shields.io/badge/NGINX-Ingress-009639?style=for-the-badge&logo=nginx&logoColor=white)
@@ -111,14 +111,15 @@ http://wordpress.joedevopslab.xyz/wp-admin
 ---
 
 ## 📸 Screenshots
-```
-| Description     | Image                               |
-| --------------- | ----------------------------------- |
-| Ingress Details | screenshots/ingress-details.png     |
-| WordPress Home  | screenshots/wordpress-home.png      |
-| Login Page      | screenshots/wordpress-login.png     |
 
-```
+### Login
+![Login Page](screenshots/wordpress-login.png)
+
+### Home Page
+![WordPress Home](screenshots/wordpress-home.png)
+
+### Ingress Details
+![Ingress Details](screenshots/ingress-details.png)
 
 ---
 
