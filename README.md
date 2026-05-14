@@ -1,4 +1,11 @@
 # WordPress on Kubernetes using Helm & NGINX Ingress
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Helm 3](https://img.shields.io/badge/Helm%203-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+![NGINX](https://img.shields.io/badge/NGINX-Ingress-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
 This project demonstrates deploying a production-ready WordPress application
 on a Kubernetes cluster using Helm charts and NGINX Ingress Controller.
