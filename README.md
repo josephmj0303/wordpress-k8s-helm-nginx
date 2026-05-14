@@ -80,7 +80,7 @@ wordpress-k8s-helm-nginx/
 
 ## 🚀 Deployment Steps
 
-1. Deploy NGINX Ingress Controller
+### 1. Deploy NGINX Ingress Controller
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.3/deploy/static/provider/aws/deploy.yaml
 ```
@@ -89,16 +89,16 @@ Verify:
 kubectl get pods -n ingress-nginx
 kubectl get svc -n ingress-nginx
 ```
-2. Install WordPress using Helm
+### 2. Install WordPress using Helm
 ```
 helm install wp helm-charts/wordpress -n wp-ns --create-namespace
 ```
-3. Verify Resources
+### 3. Verify Resources
 ```
 kubectl get all -n wp-ns
 kubectl get ingress -n wp-ns
 ```
-🌐 Access Application
+### 🌐 Access Application
 ```
 http://wordpress.joedevopslab.xyz
 ```
@@ -124,17 +124,13 @@ http://wordpress.joedevopslab.xyz/wp-admin
 
 ## 🔒 Security Considerations
 
-- WordPress and MySQL credentials are stored as Kubernetes Secrets
-  and injected into pods via environment variables.
+- WordPress and MySQL credentials are stored as Kubernetes Secrets and injected into pods via environment variables.
 
-- Database data and WordPress content are stored using PersistentVolumeClaims,
-  preventing data loss during pod restarts.
+- Database data and WordPress content are stored using PersistentVolumeClaims, preventing data loss during pod restarts.
 
-- Application is exposed externally through NGINX Ingress Controller
-  with controlled host-based routing.
+- Application is exposed externally through NGINX Ingress Controller with controlled host-based routing.
 
-- HTTPS is not currently enabled. TLS can be implemented using
-  cert-manager and Let’s Encrypt for production deployments.
+- HTTPS is not currently enabled. TLS can be implemented using cert-manager and Let’s Encrypt for production deployments.
 
 - For production environments, it is recommended to:
   - Enable TLS termination
@@ -146,37 +142,25 @@ http://wordpress.joedevopslab.xyz/wp-admin
 ## 🧠 Use Cases
 
 1️⃣ Real-World Application Deployment
-
 - Deploys a stateful production-like WordPress application using Kubernetes primitives.
 
 2️⃣ Helm Chart Authoring
-
 - Parameterized deployments using values.yaml
-
 - Reusable Helm templates
-
 - Secrets management via Kubernetes Secrets
 
 3️⃣ Kubernetes Ingress & Load Balancing
-
 - NGINX Ingress Controller
-
 - AWS ELB integration
-
 - Host-based routing using custom domain
 
 4️⃣ Persistent Storage Management
-
 - PVCs for WordPress content and MySQL data
-
 - Demonstrates stateful workloads in Kubernetes
 
 5️⃣ Cloud-Native DevOps Skills
-
 - AWS infrastructure awareness
-
 - DNS mapping
-
 - Production troubleshooting (helm lint, ingress debugging)
 
 ---
@@ -184,13 +168,9 @@ http://wordpress.joedevopslab.xyz/wp-admin
 ## 🔄 Future Enhancements
 
 - HTTPS with cert-manager & Let’s Encrypt
-
 - CI/CD using GitHub Actions
-
 - Horizontal Pod Autoscaler
-
 - External MySQL (RDS)
-
 - Monitoring with Prometheus & Grafana
 
 ---
