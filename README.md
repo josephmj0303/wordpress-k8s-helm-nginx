@@ -193,3 +193,11 @@ http://wordpress.joedevopslab.xyz/wp-admin
 
 - Monitoring with Prometheus & Grafana
 
+---
+
+## 👨‍💻 Author
+
+DevOps Engineer Portfolio Project
+
+AWS | Helm | Kubernetes | Cloud Infrastructure
+
